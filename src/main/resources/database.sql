@@ -21,3 +21,10 @@ CREATE TABLE user_roles(
     unique (user_id,role_id)
 )
 ENGINE = InnoDB;
+
+INSERT INTO users VALUES (1, 'Sanya','12345678');
+
+INSERT INTO roles VALUES (1, 'ROLE_USER');
+INSERT INTO roles VALUES (2,'ROLE_ADMIN');
+
+INSERT INTO user_roles VALUES (1,2);
